@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/upload",
+            "lambdaFunction": "LambdaUpload",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/upload"
+        }
+    ],
+    "resourceName": "apiaws",
+    "apiName": "apiaws",
+    "functionArns": [
+        {
+            "lambdaFunction": "LambdaUpload"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-monappaws-dev-95234-authRole",
+        "unAuthRoleName": "amplify-monappaws-dev-95234-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "LambdaUpload",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

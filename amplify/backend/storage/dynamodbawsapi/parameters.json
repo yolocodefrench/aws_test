@@ -1,0 +1,7 @@
+{
+    "tableName": "dynamodbawsapi",
+    "partitionKeyName": "file",
+    "partitionKeyType": "S",
+    "sortKeyName": "CognitoUser",
+    "sortKeyType": "S"
+}
